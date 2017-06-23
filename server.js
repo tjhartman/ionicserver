@@ -8,7 +8,7 @@ const config = require('./config.js')
 var port = 3000;
 
 
-massive(config.database).then ((db) => {
+massive(process.env.connectionString).then ((db) => {
  app.set('db', db);
 });
 
@@ -21,6 +21,7 @@ app.use(bodyParser.json());
 app.get('/api/getQuestionData', controller.getQuestionData)
 
 
-app.listen(port, () => {
-    console.log('Working' + port)
-});
+app.listen(process.env.PORT || port, function() {
+    console.log('listening on port', this.address().port);
+  });
+
