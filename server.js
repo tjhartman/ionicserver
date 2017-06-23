@@ -8,7 +8,7 @@ const controller = require('./dbcontroller.js');
 var port = 3000;
 
 
-massive(process.env.connectionString).then ((db) => {
+massive(process.env.database).then ((db) => {
  app.set('db', db);
 });
 
