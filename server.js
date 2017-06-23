@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const massive = require('massive');
 const app = express();
 const controller = require('./dbcontroller.js');
+const cors = require('cors');
 // const config = require('./config.js')
 
 var port = 3000;
@@ -15,6 +16,7 @@ massive(process.env.database).then ((db) => {
 //Middleware----------------------------------
 
 app.use(bodyParser.json());
+app.use(cors());
 
 //Endpoints----------------------------------
 
