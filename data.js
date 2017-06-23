@@ -20,7 +20,7 @@
         ]
     },
     {
-        Question: 'I am...',
+        Question: 'I am...', //2
         Options: [{
             Option: 'Arrogant',
             Value: 'Red'
@@ -40,7 +40,7 @@
         ]
     },
     {
-        Question: 'I am...',
+        Question: 'I am...', //3
         Options: [{
             Option: 'Enthusiastic',
             Value: 'Yellow'
@@ -60,7 +60,7 @@
         ]
     },
     {
-        Question: 'I am...',
+        Question: 'I am...', //4
         Options: [{
             Option: 'Relentless',
             Value: 'Red'
@@ -80,7 +80,7 @@
         ]
     },
     {
-        Question: 'I am...',
+        Question: 'I am...', //5
         Options: [{
             Option: 'Peaceful',
             Value: 'White'
@@ -320,7 +320,7 @@
         ]
     },
     // Situations --------------------------------------------------------
-    {
+    { //17
         Question: 'If I applied for a job, a prospective employer would most likely hire me because I am:', //17
         Options: [{
             Option: 'Driven, direct, and delegating',
@@ -336,11 +336,11 @@
         },
         {
             Option: 'Fun-loving, spirited, and casual',
-            Value: ''
+            Value: 'Yellow'
         }
         ]
     },
-    {
+    { //18
         Question: 'When involved in an intimate relationship, if I feel threatened by my partner, I:',
         Options: [{
             Option: 'Cry, feel hurt, and plan revenge',
@@ -360,7 +360,7 @@
         }
         ]
     },
-    {
+    { //19
         Question: 'For me life is most meaningful when it:',
         Options: [{
             Option: 'Allows me to be playful, lighthearted, and optimistic',
@@ -380,7 +380,7 @@
         }
         ]
     },
-    {
+    { //20
         Question: 'As a child, I was:',
         Options: [{
             Option: 'Stubborn, bright and/or aggressive',
@@ -400,7 +400,7 @@
         }
         ]
     },
-    {
+    {  //21
         Question: 'As an adult, I am:',
         Options: [{
             Option: 'Accepting, content, and/or unmotivated',
@@ -420,7 +420,7 @@
         }
         ]
     },
-    {
+    { //22
         Question: 'In an argument with a friend, I am most likely to be:',
         Options: [{
             Option: 'Verbally stubborn about facts',
@@ -440,7 +440,7 @@
         }
         ]
     },
-    {
+    { //23
         Question: 'Work is:',
         Options: [{
             Option: "A healthy activity, which should be done right if it's to be done at all. Work should be done before one plays",
