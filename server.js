@@ -22,6 +22,6 @@ app.get('/api/getQuestionData', controller.getQuestionData)
 
 
 app.listen(process.env.PORT || port, function() {
-    console.log('listening on port', this.address().port);
+    console.log('listening on port', this.address().port, app.settings.env);
   });
 
