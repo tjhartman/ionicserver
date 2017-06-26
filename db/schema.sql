@@ -161,3 +161,24 @@ values ('A healthy activity, which should be done right if it is do be done at a
 
 insert into Questions (Question, Question_id)
 values ('I am...', 1);
+
+insert into Questions (Question, Question_id)
+values ('If I applied for a job, a prospective employer would most likely hire me because I am:', 17)
+
+insert into Questions (Question, Question_id)
+values ('When involved in an intimate relationship, if I feel threatened by my partner, I', 18);
+
+insert into Questions (Question, Question_id)
+values ('For me life is most meaningful when it:', 19);
+
+insert into Questions (Question, Question_id)
+values ('As a child, I was:', 20);
+
+insert into Questions (Question, Question_id)
+values ('As an adult, I am:', 21);
+
+insert into Questions (Question, Question_id)
+values ('In an argument with a friend, I am most likely to be:', 22);
+
+insert into Questions (Question, Question_id)
+values ('Work is:', 23);
