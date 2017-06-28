@@ -82,7 +82,7 @@ app.get('/auth', passport.authenticate('auth0'));
 // });
 app.get('/auth/callback',
   passport.authenticate('auth0', {
-    successRedirect: '/'
+    successRedirect: 'http://localhost:8100/'
   }),
   function (req, res) {
     res.status(200).send(req.user);
