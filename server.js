@@ -67,7 +67,8 @@ passport.serializeUser(function (userA, done) {
 });
 //USER COMES FROM SESSION - THIS IS INVOKED FOR EVERY ENDPOINT
 passport.deserializeUser(function (userB, done) {
-  var userC = userB;
+var userC = userB;
+console.log(userC)
   //Things you might do here :
   // Query the database with the user id, get other information to put on req.user
   done(null, userC); //PUTS 'USER' ON REQ.USER
@@ -88,6 +89,7 @@ app.get('/auth/callback',
     res.status(200).send(req.user);
   })
 app.get('/auth/me', function (req, res) {
+  console.log(req.user)
   if (!req.user) return res.sendStatus(404);
   //THIS IS WHATEVER VALUE WE GOT FROM userC variable above.
   res.status(200).send(req.user);
