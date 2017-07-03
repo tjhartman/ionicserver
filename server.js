@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const massive = require('massive');
 const app = express();
-const controller = require('./dbcontroller.js');
+const dbcontroller = require('./dbcontroller.js');
 const cors = require('cors');
 const passport = require('passport');
 const Auth0Strategy = require('passport-auth0')
@@ -102,7 +102,9 @@ app.get('/auth/logout', function (req, res) {
 
 //Endpoints----------------------------------
 
-app.get('/api/getQuestionData', controller.getQuestionData)
+app.get('/api/getQuestionData', dbcontroller.getQuestionData)
+
+app.post('/postResults', dbcontroller.postResults)
 
 app.listen(process.env.PORT || port, function() {
     console.log('listening on port', this.address().port);

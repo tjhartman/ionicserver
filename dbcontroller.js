@@ -7,15 +7,15 @@ module.exports = {
         }) 
     },
 
-    //  getResults: (req, res) => {
-    //     var params = [
-    //         req.body.value,
-    //         req.body.password
-    //     ]
-    //     console.log(params)
-    //     req.app.get('db').getResults(params).then((response) => {
-    //         res.send('Value Recorded')
-    //     })
-    // }
+     postResults: (req, res) => {
+         console.log(req.body.value)
+        var params = [
+            req.body.value
+        ]
+        console.log(params)
+        req.app.get('db').postResults(params).then((response) => {
+            res.send('Value Recorded')
+        })
+    }
 
 }
