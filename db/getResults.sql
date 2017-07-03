@@ -1,0 +1,2 @@
+select value
+from results
